@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="css/style_home.css"> 
+</head>
+<body>
+    <header class="header">
+        <img class="slide_img active" src="image/banner_nha_hang.jpg" alt=""> 
+        <img class="slide_img" src="image/banner2.png" alt=""> 
+        <img class="slide_img" src="image/banner3.jpg" alt=""> 
+    </header>
+    <ul class="menu">
+        <li>
+            <a href="">Iphone</a>
+        </li>
+        <li>
+            <a href="">Samsung</a>
+        </li>
+        <li>
+            <a href="">Oppo</a>
+        </li>
+        <li>
+            <a href="">Vivo</a>
+        </li>
+        <li>
+            <a href="">Huawei</a>
+        </li>
+    </ul>
+    
+    <div class="container">
+        <ul class="products">
+            <% foods.forEach((food)=>{ %>
+                <li>
+                    <img src="<%= food.img %>" alt="">
+                    <h3><%= food.name %></h3>
+                    <p class="gia_ban"><%= food.price %></p>
+                    <p class="goi_mon">Gọi món</p>
+                    <span class="sale"><%= food.sale %></span>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <h2>Thế Giới Ẩm Thực</h2>
+        <ul class="list_footer">
+            <li>0988 444 333</li>
+            <li>Số 78 - Duy Tân - Cầu Giấy - Hà Nội</li>
+            <li>Truy cập trang chủ: <a href="">tại đây</a></li>
+        </ul>
+    </div>
+
+</body>
+<script src="js/slide_home.js"></script>
+</html>
